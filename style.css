@@ -23,7 +23,8 @@ body {
 
 .logo {
     width: 100px; /* Largura da logo */
-    height: auto;
+    height: 100px; /* Altura da logo para garantir proporção */
+    object-fit: cover; /* Mantém a proporção da imagem dentro do tamanho definido */
     margin-bottom: 10px; /* Espaço abaixo da logo */
     border-radius: 50%; /* Tornando a logo circular */
     border: 3px solid #fff; /* Borda branca ao redor da logo */
@@ -106,40 +107,4 @@ footer {
 
 footer ul {
     list-style-type: none;
-    padding: 0;
-    margin: 10px 0;
-}
-
-footer li {
-    margin: 5px 0;
-}
-
-footer span {
-    display: block;
-    margin-top: 10px;
-}
-
-a {
-    color: #388e3c; /* Links em verde escuro */
-    text-decoration: none;
-    transition: color 0.3s ease; /* Transição suave */
-}
-
-a:hover {
-    color: #1b5e20; /* Links mudam para verde mais escuro ao passar o mouse */
-}
-
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2rem;
-    }
-
-    h2 {
-        font-size: 1.5rem;
-    }
-
-    section {
-        margin: 10px;
-        padding: 20px;
-    }
-}
+    padding: 0
