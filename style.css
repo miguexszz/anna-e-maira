@@ -22,7 +22,7 @@ body {
 }
 
 .logo {
-    width: 150px; /* Largura da logo */
+    width: 100px; /* Largura da logo */
     height: auto;
     margin-bottom: 10px; /* Espaço abaixo da logo */
     border-radius: 50%; /* Tornando a logo circular */
