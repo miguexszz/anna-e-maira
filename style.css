@@ -1,0 +1,135 @@
+/* style.css */
+
+/* Importando uma fonte moderna */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+body {
+    background: linear-gradient(to bottom, #d4fc79, #96e6a1); /* Gradiente de fundo em tons de verde claro */
+    color: #333; /* Texto escuro */
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(to right, #388e3c, #43a047); /* Gradiente no cabeçalho */
+    color: #fff; /* Texto branco */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.9); /* Fundo semi-transparente */
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 900px;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+section:hover {
+    transform: translateY(-10px); /* Elevação suave ao passar o mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+h2 {
+    color: #388e3c; /* Verde escuro */
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2rem;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #43a047;
+    margin: 10px auto 0;
+}
+
+ul {
+    list-style-type: disc; /* Marcadores de lista padrão */
+    padding-left: 20px;
+}
+
+ul li {
+    margin: 10px 0;
+    padding-left: 10px;
+    position: relative;
+}
+
+ul li::before {
+    content: '✓'; /* Adiciona uma marca de verificação */
+    position: absolute;
+    left: -20px;
+    color: #43a047;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(to right, #388e3c, #43a047); /* Gradiente no rodapé */
+    color: #fff; /* Texto branco no rodapé */
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+footer li {
+    margin: 5px 0;
+}
+
+footer span {
+    display: block;
+    margin-top: 10px;
+}
+
+a {
+    color: #388e3c; /* Links em verde escuro */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Transição suave */
+}
+
+a:hover {
+    color: #1b5e20; /* Links mudam para verde mais escuro ao passar o mouse */
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    section {
+        margin: 10px;
+        padding: 20px;
+    }
+}
