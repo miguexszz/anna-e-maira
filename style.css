@@ -22,8 +22,8 @@ body {
 }
 
 .logo {
-    width: 100px; /* Largura da logo */
-    height: 100px; /* Altura da logo para garantir proporção */
+    width: 150px; /* Largura da logo */
+    height: 150px; /* Altura da logo para garantir proporção */
     object-fit: cover; /* Mantém a proporção da imagem dentro do tamanho definido */
     margin-bottom: 10px; /* Espaço abaixo da logo */
     border-radius: 50%; /* Tornando a logo circular */
