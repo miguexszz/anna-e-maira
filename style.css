@@ -23,8 +23,7 @@ body {
 
 .logo {
     width: 150px; /* Largura da logo */
-    height: 150px; /* Altura da logo para garantir proporção */
-    object-fit: cover; /* Mantém a proporção da imagem dentro do tamanho definido */
+    height: auto;
     margin-bottom: 10px; /* Espaço abaixo da logo */
     border-radius: 50%; /* Tornando a logo circular */
     border: 3px solid #fff; /* Borda branca ao redor da logo */
@@ -93,6 +92,62 @@ ul li::before {
     left: -20px;
     color: #43a047;
     font-weight: bold;
+}
+
+/* Estilo da Galeria */
+#galeria {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+#galeria h2 {
+    color: #388e3c;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#galeria h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #43a047;
+    margin: 10px auto 0;
+}
+
+.galeria-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.galeria-item {
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 600px) {
+    .galeria-item {
+        width: 100%;
+        height: auto;
+    }
 }
 
 footer {
